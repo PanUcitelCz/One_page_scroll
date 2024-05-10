@@ -1,0 +1,37 @@
+body, html
+    margin 0
+    padding: 0
+    font-family: Arial, Helvetica, sans-serif
+    overflow-y: scroll
+    scroll-snap-type: y mandatory
+    height: 100vh
+
+section
+    height: 100vh
+    width: 100%
+    background-color: grey
+    scroll-snap-align: start
+    scroll-behavior: smooth
+
+    &:nth-child(odd)
+        background-color red
+
+header
+    width 100%
+    padding 36px 0
+    display: flex
+    justify-content: space-evenly
+    position: fixed
+    background: rgba(75, 70, 70, 0.369)
+
+    a
+        color white
+        text-decoration: none
+        font-weight: bold
+        transition: ease .3s
+
+        &:hover
+            color green
+    
+    a.current
+        color yellow
